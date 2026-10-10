@@ -7,7 +7,7 @@ from pathlib import Path
 
 import requests
 
-METRICS_URL = "http://localhost:52588/metrics"
+METRICS_URL = "http://localhost:52578/metrics"
 OUTPUT_FILE = Path("data/ad_metrics.csv")
 INTERVAL_SECONDS = 10
 
