@@ -68,12 +68,13 @@ QUERIES = {
         ) (
             rate(
                 rpc_server_call_duration_seconds_count{
+                    rpc_response_status_code=~".+",
                     rpc_response_status_code!="OK"
                 }[5m]
             )
         )
     """,
-}
+    }
 
 
 def query_prometheus(query):
